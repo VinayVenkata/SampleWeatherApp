@@ -28,16 +28,24 @@ class WeatherTableViewController: UITableViewController, UISearchBarDelegate {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return forecastData.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return forecastData.count
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let date = Calendar.current.date(byAdding: .day, value: section ,to: Date())
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM dd, yyyy"
+        
+        return dateFormatter.string(from: date!)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let  weatherObject = forecastData[indexPath.row]
+        let  weatherObject = forecastData[indexPath.section]
         cell.textLabel?.text = weatherObject.summary
         cell.detailTextLabel?.text = "\(Int(weatherObject.temperature)) °F"
         cell.imageView?.image = UIImage(named: weatherObject.icon)
