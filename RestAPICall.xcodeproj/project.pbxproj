@@ -14,6 +14,7 @@
 		9BA1B3DC2114DEA300BD0A76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA1B3DA2114DEA300BD0A76 /* LaunchScreen.storyboard */; };
 		9BA1B3E72114DEA300BD0A76 /* RestAPICallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B3E62114DEA300BD0A76 /* RestAPICallTests.swift */; };
 		9BA1B3F22114DEA300BD0A76 /* RestAPICallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B3F12114DEA300BD0A76 /* RestAPICallUITests.swift */; };
+		9BA1B4022114E13A00BD0A76 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B4012114E13A00BD0A76 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9BA1B3ED2114DEA300BD0A76 /* RestAPICallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestAPICallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA1B3F12114DEA300BD0A76 /* RestAPICallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPICallUITests.swift; sourceTree = "<group>"; };
 		9BA1B3F32114DEA300BD0A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BA1B4012114E13A00BD0A76 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				9BA1B3D12114DEA000BD0A76 /* AppDelegate.swift */,
 				9BA1B3D32114DEA000BD0A76 /* ViewController.swift */,
+				9BA1B4012114E13A00BD0A76 /* Weather.swift */,
 				9BA1B3D52114DEA000BD0A76 /* Main.storyboard */,
 				9BA1B3D82114DEA300BD0A76 /* Assets.xcassets */,
 				9BA1B3DA2114DEA300BD0A76 /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BA1B3D42114DEA000BD0A76 /* ViewController.swift in Sources */,
+				9BA1B4022114E13A00BD0A76 /* Weather.swift in Sources */,
 				9BA1B3D22114DEA000BD0A76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
